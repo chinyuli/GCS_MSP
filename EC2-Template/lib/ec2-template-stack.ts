@@ -66,7 +66,7 @@ export class Ec2TemplateStack extends Stack {
       instanceType: aws_ec2.InstanceType.of(aws_ec2.InstanceClass.T2, aws_ec2.InstanceSize.MICRO),
       machineImage: ami,
       securityGroup: securityGroup,
-      // keyName: key.keyPairName,
+      // keyName: key.keyPairName
       role: role
     });
 
